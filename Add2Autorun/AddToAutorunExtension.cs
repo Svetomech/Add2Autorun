@@ -14,7 +14,7 @@ namespace Add2Autorun
     /// </summary>
     /// <seealso cref="SharpContextMenu" />
     [ComVisible(true)]
-    [COMServerAssociation(AssociationType.AllFiles)]
+    [COMServerAssociation(AssociationType.ClassOfExtension, ".exe")]
     public class AddToAutorunExtension : SharpContextMenu
     {
         /// <summary>
