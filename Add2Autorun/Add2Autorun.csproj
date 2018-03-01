@@ -45,7 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddToAutorunExtension.cs" />
-    <Compile Include="Localization\SourceFiles\Add2Autorun.Designer.cs">
+    <Compile Include="Localization\Add2Autorun.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Add2Autorun.resx</DependentUpon>
@@ -73,17 +73,17 @@
     </ContentWithTargetPath>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Localization\SourceFiles\Add2Autorun.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Add2Autorun.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Localization\SourceFiles\Add2Autorun.ru.resx" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Svetomech.Utilities\Svetomech.Utilities\Svetomech.Utilities.csproj">
       <Project>{bd22946b-c1be-4f95-a031-4fc8bfec09a5}</Project>
       <Name>Svetomech.Utilities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Localization\Add2Autorun.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Add2Autorun.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\Add2Autorun.ru-RU.resx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -41,8 +41,8 @@ namespace Add2Autorun
             var itemAddToAutorun = new ToolStripMenuItem
             {
                 Text = isAutorunAlready
-                    ? Localization.SourceFiles.Add2Autorun.RemoveFromAutorun
-                    : Localization.SourceFiles.Add2Autorun.AddToAutorun
+                    ? Localization.Add2Autorun.RemoveFromAutorun
+                    : Localization.Add2Autorun.AddToAutorun
             };
             itemAddToAutorun.Click += (sender, args)
                 => App.SwitchAutorun(fileName, !isAutorunAlready ? filePath : null);

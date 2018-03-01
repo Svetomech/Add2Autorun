@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Add2Autorun.Localization.SourceFiles {
+namespace Add2Autorun.Localization {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Add2Autorun.Localization.SourceFiles {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Add2Autorun.Localization.SourceFiles.Add2Autorun", typeof(Add2Autorun).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Add2Autorun.Localization.Add2Autorun", typeof(Add2Autorun).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
