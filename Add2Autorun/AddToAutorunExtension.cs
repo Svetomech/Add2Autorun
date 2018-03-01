@@ -35,7 +35,7 @@ namespace Add2Autorun
         protected override ContextMenuStrip CreateMenu()
         {
             string filePath = Path.GetFullPath(SelectedItemPaths.Single());
-            string fileName = Path.GetFileName(filePath);
+            string fileName = Path.GetFileNameWithoutExtension(filePath);
             bool isAutorunAlready = App.VerifyAutorun(fileName, filePath);
 
             var itemAddToAutorun = new ToolStripMenuItem
