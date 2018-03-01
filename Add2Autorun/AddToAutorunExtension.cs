@@ -51,13 +51,5 @@ namespace Add2Autorun
             menu.Items.Add(itemAddToAutorun);
             return menu;
         }
-
-        /// <summary>
-        /// Called when the context menu is about to be displayed.
-        /// Is currently used for localization purposes only.
-        /// </summary>
-        /// <param name="parentItemIndex">The index of the parent menu item.</param>
-        protected override void OnInitialiseMenu(int parentItemIndex)
-            => CultureInfo.DefaultThreadCurrentUICulture = CultureInfo.GetCultureInfo(CultureInfo.InstalledUICulture.Name);
     }
 }
