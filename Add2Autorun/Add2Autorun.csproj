@@ -48,18 +48,22 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="Setup\Add2Autorun_setup.cmd">
+    <ContentWithTargetPath Include="Setup\Add2Autorun_setup.cmd">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Setup\install.cmd">
+      <TargetPath>Add2Autorun_setup.cmd</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Setup\install.cmd">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Setup\restart_explorer.cmd">
+      <TargetPath>install.cmd</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Setup\restart_explorer.cmd">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Setup\uninstall.cmd">
+      <TargetPath>restart_explorer.cmd</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Setup\uninstall.cmd">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+      <TargetPath>uninstall.cmd</TargetPath>
+    </ContentWithTargetPath>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Svetomech.Utilities\Svetomech.Utilities\Svetomech.Utilities.csproj">
