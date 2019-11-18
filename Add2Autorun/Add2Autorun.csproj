@@ -36,8 +36,8 @@
     <AssemblyOriginatorKeyFile>Add2Autorun Key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SharpShell, Version=2.2.0.0, Culture=neutral, PublicKeyToken=f14dc899472fe6fb, processorArchitecture=MSIL">
-      <HintPath>..\packages\SharpShell.2.2.0.0\lib\net40\SharpShell.dll</HintPath>
+    <Reference Include="SharpShell, Version=2.7.1.0, Culture=neutral, PublicKeyToken=f14dc899472fe6fb, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpShell.2.7.1\lib\net40-client\SharpShell.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
@@ -54,7 +54,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Add2Autorun Key.snk" />
-    <None Include="packages.config" />
     <ContentWithTargetPath Include="Setup\Add2Autorun_setup.cmd">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <TargetPath>Add2Autorun_setup.cmd</TargetPath>
@@ -71,6 +70,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <TargetPath>uninstall.cmd</TargetPath>
     </ContentWithTargetPath>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Svetomech.Utilities\Svetomech.Utilities\Svetomech.Utilities.csproj">
